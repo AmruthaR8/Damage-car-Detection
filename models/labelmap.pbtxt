@@ -1,0 +1,49 @@
+item {
+    id: 1
+    name: 'bonnet'
+}
+
+item {
+    id: 2
+    name: 'bumper'
+}
+
+item {
+    id: 3
+    name: 'bumper_scratch'
+}
+
+item {
+    id: 4
+    name: 'door'
+}
+
+item {
+    id: 5
+    name: 'door_scratch'
+}
+
+item {
+    id: 6
+    name: 'front_windshield_glass'
+}
+
+item {
+    id: 7
+    name: 'head_lights'
+}
+
+item {
+    id: 8
+    name: 'rear_windshield_glass'
+}
+
+item {
+    id: 9
+    name: 'side_mirror'
+}
+
+item {
+    id: 10
+    name: 'tail_lights'
+}

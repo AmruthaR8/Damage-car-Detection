@@ -1,0 +1,11 @@
+???
+Bonnet
+Bumper
+Bumper_scratch
+Door
+Door_scratch
+Front_windshield_glass
+Head_lights
+Rear_windshield_glass
+Side_mirror
+Tail_lights

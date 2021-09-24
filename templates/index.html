@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Car Classification</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="icon" href="http://getbootstrap.com/favicon.ico">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+<style>
+body {font-family: 'Montserrat' !important;}
+a.ab:visited, a.ab:link {text-decoration: none;}
+a.ab:hover, a.ab:active {color : #00AAE7;}
+
+.labs-logo{
+    position:relative;
+    float:right;
+        height: auto;
+    width: 200px;
+    margin: 0px;
+    bottom: 61px;
+    left: -100px;
+}
+
+.nav-car{
+    height:90px !important;
+    
+}
+.miracle-logo{
+    position:relative;
+    width: 200px;
+    margin: 0px;
+    bottom: -15px;
+    left: 20px;
+
+}
+
+.head-text{
+   position:relative;
+   text-align:center;
+   font-weight:bold;
+   left:-120px;
+   padding:0px;
+}
+
+.signout{
+    position:relative;
+    float:right;
+    font-size: 30px;
+    left: 165px;
+    top: -50px;
+}
+
+</style>
+<body>
+
+<header class="w3-container w3-theme w3-padding" id="myHeader">
+           <nav class="navbar navbar-inverse navbar-fixed-top nav-car" role="navigation">
+	<img src="static/img/logo.png" style="float:left" class="img-responsive miracle-logo" height="100px" width="150px"></img>
+	
+	 <center><h1 class="head-text"><font color="white" size='6'><b>Car Classification</b></font></h1></center>
+	
+	<img id="ds-logo"  src="static/img/mil-light-logo.png" class="img-responsive labs-logo" height="100px" width="150px"></img>
+	
+	
+	<a href="/" class="signout" style="color:#ffffff;" data-toggle="tooltip" data-placement="bottom" title="Logout">
+<i class="fa fa-sign-out mr-2 mt-1"></i>
+</a>
+	
+           </nav>
+        </header>
+        
+        <br>
+<br><br><br><br><br>
+<div class="w3-row-padding w3-center w3-margin-top">
+<div class="w3-third">
+  <div class="w3-card w3-container" style="height:300px"> 
+  <br><br> 
+ <a class= "ab" style="text-decoration:none;" href="{{ url_for('uploads',variable="leftnright") }}"><h3>Left and Right Identification</h3><br><br>
+  <i class="fa fa-automobile w3-margin-bottom w3-text-theme w3-xxxlarge" style="font-size:120px"> </i></a>
+  </div>
+</div>
+
+<div class="w3-third">
+  <div class="w3-card w3-container" style="height:300px">
+  <br><br>
+     <a class= "ab" style="text-decoration:none;" href="{{ url_for('uploads',variable="frontnback") }}"><h3>Front and Back Identification</h3><br><br>
+  <i class="fa fa-th w3-margin-bottom w3-text-theme w3-xxxlarge" style="font-size:120px"></i>
+
+  </div>
+</div>
+
+<div class="w3-third">
+  <div class="w3-card w3-container" style="height:300px">
+  <br><br>
+ <a class= "ab" style="text-decoration:none;" href="{{ url_for('uploads',variable="CarDamage") }}"><h3>Car Damage Identification</h3><br>
+  <i class="fa fa-thumbs-o-up w3-margin-bottom w3-text-theme w3-xxxlarge" style="font-size:120px"></i>
+  </div>
+</div>
+</div>
+
+<footer class="container-fluid navbar-fixed-bottom" style="background-color:#232527;color:#fff;width:100%;height:40px;">
+        <div class="row">
+           <div class="container-fluid" style="padding:10px 0px;">
+              <div class="col-sm-3 col-xs-12">
+                 <h6 id="footpara1">&#169 2018 <span id="red"> Miracle Software Systems, Inc</span></h6>
+              </div>
+              <div class="col-sm-offset-6 col-sm-3 col-xs-12">
+                 <h6 id="footpara2" align="right">Created by <b> Miracle's<span id="red"> Innovation Labs</b></span></h6>
+              </div>
+           </div>
+        </div>
+     </footer>
+</div>
+<script type='type/javascript'>
+window.location.reload();
+</script>
+</body>
+</html>
